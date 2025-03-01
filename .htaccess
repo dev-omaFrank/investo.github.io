@@ -1,0 +1,12 @@
+#RewriteEngine On
+
+# Redirect requests to remove .html/.php
+#RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+#RewriteRule ^ %1 [R=301,L]
+
+#RewriteCond %{THE_REQUEST} \s/([^.]+)\.php [NC]
+#RewriteRule ^ %1 [R=301,L]
+
+# Rewrite rules to serve .html or .php files
+#RewriteRule ^([^/]+)$ $1.html [L]
+#RewriteRule ^([^/]+)$ $1.php [L]

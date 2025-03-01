@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+ <rules>
+  <rule ref="PSR12">
+   <exclude name="Generic.Formatting.DisallowedTabs"/>
+  </rule>
+  <rule ref="Generic.Formatting.IndentationType">
+   <properties>
+    <property name="type" value="tab"/>
+       <property name="size" value="1"/>
+   </properties>
+  </rule>
+ </rules>
+</config>
